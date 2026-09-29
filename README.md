@@ -1,7 +1,7 @@
 # Decoder fine-tuning for `bodhan-ai/indic-transcribe-core`
 
-Fine-tunes the transformer decoder on IndicTTS while the FastConformer encoder
-stays frozen (~0.41B trainable of 1.22B).
+Fine-tunes the transformer decoder on IndicTTS_Marathi dataset while the FastConformer encoder
+stays frozen.
 
 ## Pipeline
 
