@@ -1,0 +1,40 @@
+{
+  "repo_id": "bodhan-ai/indic-transcribe-core",
+  "data_dir": "/devwork/Sougata/ASR/data",
+  "ckpt_dir": "/devwork/Sougata/ASR/exp/checkpoints",
+  "log_dir": "/devwork/Sougata/ASR/exp/logs",
+  "final_ckpt_for_inference": "/devwork/Sougata/ASR/exp/final",
+  "gpus": [
+    0
+  ],
+  "corpora": [
+    {
+      "root": "/workspace/Sougata/dataset_1/TTS_data/IndicTTS/IndicTTS_Marathi",
+      "lang": "mr",
+      "split_dir": "train"
+    }
+  ],
+  "min_seconds": 0.5,
+  "max_seconds": 30,
+  "val_frac": 0.1,
+  "seed": 42,
+  "num_workers": 8,
+  "group_by_length": true,
+  "max_steps": 1000,
+  "lr": 1e-05,
+  "warmup_ratio": 0.03,
+  "weight_decay": 0.01,
+  "label_smoothing": 0,
+  "per_device_batch": 16,
+  "grad_accum_steps": 2,
+  "max_grad_norm": 1.0,
+  "bf16": true,
+  "wer_subset": 200,
+  "logging_steps": 1,
+  "report_to": [
+    "tensorboard"
+  ],
+  "val_steps": 200,
+  "save_checkpoint_steps": 200,
+  "save_total_limit": 2
+}
